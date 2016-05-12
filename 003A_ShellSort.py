@@ -9,14 +9,12 @@ class ShellSort():
         gap = data_len / 2
         while gap > 0:
             for i in range(gap, data_len):
-                j = i - gap
-                if self.data[i] < self.data[j]:
-                    self.data[i], self.data[j] = self.data[j], self.data[i]
-                    k = j - gap
-                    while k > 0:
-                        if self.data[k] > self.data[j]:
-                            self.data[k], self.data[j] = self.data[j], self.data[k]
-                        k -= gap
+                if self.data[i] < self.data[i - gap]:
+                    j = i
+                    while j - gap > 0:
+                        if self.data[j] < self.data[j - gap]:
+                            self.data[j], self.data[j - gap] = self.data[j - gap], self.data[j]
+                        j -= gap
             gap /= 2
 
 if __name__ == '__main__':
