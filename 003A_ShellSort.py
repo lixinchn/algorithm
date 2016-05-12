@@ -11,9 +11,8 @@ class ShellSort():
             for i in range(gap, data_len):
                 if self.data[i] < self.data[i - gap]:
                     j = i
-                    while j - gap > 0:
-                        if self.data[j] < self.data[j - gap]:
-                            self.data[j], self.data[j - gap] = self.data[j - gap], self.data[j]
+                    while j - gap > 0 and self.data[j] < self.data[j - gap]:
+                        self.data[j], self.data[j - gap] = self.data[j - gap], self.data[j]
                         j -= gap
             gap /= 2
 
