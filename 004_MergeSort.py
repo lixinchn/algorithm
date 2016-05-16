@@ -25,24 +25,23 @@ class MergeSort():
 
         
     def merge(self, data, ret_data, low, middle, high):
-        for i in range(len(ret_data)):
-            data[i] = ret_data[i]
-
+        data = []
         i, j, k = low, middle + 1, low
         while k <= high:
             if i > middle:
-                ret_data[k] = data[j]
+                data.append(ret_data[j])
                 j += 1
             elif j > high:
-                ret_data[k] = data[i]
+                data.append(ret_data[i])
                 i += 1
-            elif data[i] <= data[j]:
-                ret_data[k] = data[i]
+            elif ret_data[i] <= ret_data[j]:
+                data.append(ret_data[i])
                 i += 1
             else:
-                ret_data[k] = data[j]
+                data.append(ret_data[j])
                 j += 1
             k += 1
+        ret_data[low:high + 1] = data
 
 
 
