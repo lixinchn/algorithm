@@ -3,7 +3,7 @@ import random
 
 class QuickSortE():
     def __init__(self):
-        self.data = [1, 3, 1, 2, 2, 1, 1, 2, 3, 2, 5, 2, 4, 2, 1, 3, 4]
+        self.data = [3, 1, 1, 2, 2, 1, 1, 2, 3, 2, 5, 2, 4, 2, 1, 3, 4]
 
     def do(self):
         low, high = 0, len(self.data) - 1
