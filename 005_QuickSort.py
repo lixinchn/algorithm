@@ -32,8 +32,6 @@ class QuickSort():
         return -1
 
 
-
-
 if __name__ == '__main__':
     qs = QuickSort()
     qs.do()

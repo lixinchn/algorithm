@@ -16,6 +16,7 @@ class ShellSort():
                         j -= gap
             gap /= 2
 
+
 if __name__ == '__main__':
     ss = ShellSort()
     ss.do()
