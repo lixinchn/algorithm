@@ -1,1 +1,1 @@
-# algorithm
+一些常用的算法，使用 python 实现。
