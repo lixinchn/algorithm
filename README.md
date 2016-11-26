@@ -4,3 +4,5 @@
 
 [最长公共子串问题(longest common subsequence problem)](https://github.com/lixinchn/algorithm/tree/master/DynamicProgramming/02_LongestCommonSubsequence)
 
+[矩阵连乘积问题(matrix multiplication problem)](https://github.com/lixinchn/algorithm/tree/master/DynamicProgramming/03_MatrixMultiplication)
+
