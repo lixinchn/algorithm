@@ -6,3 +6,5 @@
 
 [矩阵连乘积问题(matrix multiplication problem)](https://github.com/lixinchn/algorithm/tree/master/DynamicProgramming/03_MatrixMultiplication)
 
+[矩阵子集和问题(subset sum problem)](https://github.com/lixinchn/algorithm/tree/master/DynamicProgramming/04_SubsetSum)
+
